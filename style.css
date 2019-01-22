@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  background: #222;
+  height: auto;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#navbar {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  font-size: 1.3rem;
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style-type: none;  
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem; 
+}
+
+#navbar li {   
+  float: left;
+  margin:0;  
+}
+
+#navbar a, .dropdownBTN{
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  padding:0.7rem 1rem; 
+}
+
+.dropdown li {
+  display: inline-block;
+}
+
+.dropdown-menu { 
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  text-transform: uppercase;
+  margin-top:0.7rem;
+}
+
+.dropdown-menu a {  
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+#images img, #masonry img, #back-to-top img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+p#back-to-top{
+  position:fixed;
+  display:none;
+  bottom:0.5rem;
+  right:0.5rem;
+}
+
+p#back-to-top img{
+  opacity: 0.4;
+}
+
+p#back-to-top a{
+  text-align:center;
+  text-decoration:none;
+  color:#d1d1d1;
+  display:block;
+  width:64px;
+  /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+  /* -moz-transition:color 1s;
+  -webkit-transition:color 1s;
+  -o-transition:color 1s; */
+}
+
+p#back-to-top a:hover{
+  color:#979797;
+}
+
+p#back-to-top a span{
+  background:transparent no-repeat -25px -290px;
+  border-radius:6px;
+  display:block;
+  height:24px;
+  width:26px;
+  margin-bottom:0;
+  /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+  /* -moz-transition:background 1s;
+  -webkit-transition:background 1s;
+  -o-transition:background 1s; */
+}
+
+#back-to-top a:hover span{
+  background:transparent no-repeat -25px -290px;
+}
+
+main {
+  max-width: 1280px;
+  margin: auto;
+  /*box-shadow: 30px 0px 50px rgba(255, 255, 255, 0.1),
+    -30px 0px 50px rgba(255, 255, 255, 0.1);*/
+}
+
+#landing {
+  background: #fff;
+}
+
+#landing-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#landing-text h2 {
+  color: #888;
+}
+
+#landing-image {
+  background: url("../images/showcase.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 500ms ease;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+}
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+#header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.caption {
+  padding: 0.8rem;
+  text-align: center;
+  color: #d3d3d3;
+}
+
+#portfolioTag{
+  display:none;
+  border-bottom: 0.1rem groove #979797;
+  margin: 0 1rem;
+  padding-top: 4rem;
+}
+
+#portfolioTag button{
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #333;
+  border-style: none;
+  border-color: #888;
+  border-radius: 10px 0 0 0;
+  color: #d3d3d3;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  column-gap: 0;
+  padding: 0.7rem 0.3rem;
+  margin-right: 0.1rem;
+}
+
+#masonry {
+  max-width: 1440px;
+  margin: 0 1rem;
+  padding-top: 4rem;
+  column-gap: 1rem;
+}
+
+#masonry img {
+  padding-bottom: 1rem;
+}
+
+#largeSizePhotoContainter{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+  #largeSizePhotoContainterInner{
+    position: absolute;
+  }
+    #largeSizePhoto{
+      border:0px solid #ccc;
+    }
+
+    .largeSizeLandscape {
+      max-width: 1200px;
+      margin: auto;
+      z-index: 200;
+    }
+    .largeSizePortait {
+      max-width: 600px;
+      margin: auto;
+      z-index: 200;
+    }
+
+.arrow{
+  font-family: "Lucida Console", Monospace;
+  cursor: pointer;
+  line-height: 40px;
+  text-align: center;
+  font-size: 4rem;  /*size of arrow*/
+  position: absolute;
+  z-index: 202;  
+  color: rgb(221, 198, 149);
+  top:50%;
+}
+
+#prev{
+  left:-3rem;
+}
+
+#next{
+  right: -3rem;
+}
+
+#prev:hover, #next:hover {
+    color: white;
+}
+
+.infoText {
+  max-width: 900px;
+  text-align: center;
+  color: white;
+  margin:auto;  
+  padding-top: 8rem;    
+}
+
+#biography{
+  text-align: left;
+  margin:0 2.5rem;
+}
+  
+.infoText h2 {
+  padding-bottom: 2rem;
+}
+
+.infoBanner{
+  background: url("../images/info/DSC_1685.jpg") no-repeat center;
+  background-size: cover;
+  position: absolute;
+  left:0;
+  max-width: 2000px;
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin-top:8rem;
+  margin-bottom: 12rem;   
+}
+
+#pricing {
+  margin-top: 20rem;
+}
+
+#pricing h2 {
+  text-align: left;
+  margin: 3rem 0 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+}
+
+.price {
+  float: right;
+}
+
+#pricing p {
+  margin: auto;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  text-transform: capitalize;
+} 
+
+.addons{
+  float: right;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #d3d3d3;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+/* Screen Sizes 500px and Down, disable arrow buttons and dropdown menu*/
+@media (max-width:500px){
+  .arrow {
+    display: none;
+  }
+
+  #navbar a, .dropdownBTN{
+    padding:0.7rem 0.7rem; 
+  }
+
+  .dropdown:hover .dropdown-menu{
+    display: none;
+  }  
+}
+
+@media (max-width:480px){  
+  #portfolioTag button{
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width:375px){  
+  #portfolioTag button{
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width:360px){  
+  #portfolioTag button{
+    font-size: 0.831rem;
+  }
+}
+
+@media (max-width:320px){
+  .arrow {
+    display: none;
+  }
+
+  #navbar a, .dropdownBTN{
+    padding:0.5rem 0.4rem; 
+  }
+
+  .dropdown:hover .dropdown-menu{
+    display: none;
+  }
+
+  #portfolioTag button{
+    font-size: 0.73rem;
+  }
+}
+
+/* Screen Sizes 500px and Up */
+@media (min-width: 500px) {
+  #masonry {
+    column-count: 2;
+  }
+
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text {
+    height: 100vh;
+  }
+
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+/* Screen Sizes 800px and Up */
+@media (min-width: 800px) {
+  #masonry {
+    column-count: 3;
+  }
+  
+  .btn {
+    padding: 1rem 3rem;
+  }
+}
+
+/* Screen Sizes 1200px and Up */
+@media (min-width: 1200px) {
+  #masonry {
+    column-count: 4;
+  }  
+}
+
+@media (min-width: 1500px) {
+  #masonry {
+    margin: auto;
+  } 
+}
