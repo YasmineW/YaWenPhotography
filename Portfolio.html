@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Albun - Ya Wen Photography</title> 
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script> 
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+          <ul>
+            <li><a href="index.html" id="nav-logo">Home</a></li>          
+            <li class="dropdown"> 
+                    <a href="#all" class="dropdownBTN" id="albumBTN" onclick= "showAlbum('#all')">Portfolio</a>
+                    <div class="dropdown-menu">
+                      <a href="#wedding" id="weddingBTN" onclick="showAlbum('#wedding')">Weddings</a>
+                      <a href="#baby" id="babyBTN" onclick="showAlbum('#baby')">Babies & Kids</a>
+                      <a href="#family" id="familyBTN" onclick="showAlbum('#family')">Families</a>
+                      <a href="#pregnancy" id="pregnancyBTN" onclick="showAlbum('#pregnancy')">Pregnancies</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Info.html" class="dropdownBTN">Info</a>
+                    <div class="dropdown-menu">              
+                      <a href="About.html#aboutme">About Me</a>
+                      <a href="About.html#pricing">Pricing</a>
+                    </div>
+                </li>
+            <li><a href="#main-footer" id="nav-contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav> 
+
+    <!-- back to top tag -->
+    <span style="font-size:14px"><p id="back-to-top"><a href="#top"><span></span><img src="images/Back2Top.png"/></a></p></span>     
+      
+      <div id="largeSizePhotoContainter">
+          <div id="largeSizePhotoContainterInner">
+            <img id="largeSizePhoto" src=""/>
+            <a class = "arrow" id = "prev" > < </a>
+            <a class = "arrow" id = "next" > > </a>
+            </div>
+        </div>
+        
+        <span id="portfolioTag">
+                <button onclick="showAlbum('#wedding')">Weddings</button>
+                <button onclick="showAlbum('#baby')">Babies & Kids</button>
+                <button onclick="showAlbum('#family')">Families</button>
+                <button onclick="showAlbum('#pregnancy')">Pregnancies</button>
+        </span>          
+        
+    <div id="masonry">           
+    </div>       
+
+    <footer id="main-footer">
+        <h3>Get In Touch</h3>
+        <p>Email or call us to set up a consult</p>
+        <p>Email:
+            <strong>info@yawenphotography.com</strong>
+        </p>
+        <p>Phone:
+            <strong>(+64) 021 - 023 25254</strong>
+        </p>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script> -->
+    <script src="js/main.js"></script>
+
+</body>
+
+<div style="margin-top:300px"></div>
+
+</html>
